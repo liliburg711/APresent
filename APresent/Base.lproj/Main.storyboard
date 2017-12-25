@@ -1,24 +1,525 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iDv-Xa-yKR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kefa.ttf">
+            <string>Kefa-Regular</string>
+        </array>
+        <array key="PingFang.ttc">
+            <string>PingFangHK-Regular</string>
+        </array>
+        <array key="Zapfino.ttf">
+            <string>Zapfino</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--A Present for girls-->
+        <scene sceneID="dmy-4m-Lkq">
+            <objects>
+                <viewController id="YPc-BD-5OE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bqs-FD-bgf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1. 上傳自己的交換禮物的圖片(會出現在綠色格子) 2. 選擇紅色格子的圖案, 紅色格子的圖案與綠色格子相同,就交換禮物成功" translatesAutoresizingMaskIntoConstraints="NO" id="eJo-95-hKv">
+                                <rect key="frame" x="79" y="163" width="230" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="santaclaus" translatesAutoresizingMaskIntoConstraints="NO" id="uPt-uZ-X4A">
+                                <rect key="frame" x="38" y="278" width="139" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="santaclaus" translatesAutoresizingMaskIntoConstraints="NO" id="bKv-em-bPf">
+                                <rect key="frame" x="212" y="278" width="139" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9L-KD-jVP">
+                                <rect key="frame" x="185" y="341" width="19" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gift" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-UY-eSb">
+                                <rect key="frame" x="135" y="432" width="119" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="交換禮物規則：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZML-Ne-bcP">
+                                <rect key="frame" x="126" y="111" width="163" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="||" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzo-qF-5V7">
+                                <rect key="frame" x="186" y="403" width="19" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="v5i-PL-Sf5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="A Present for girls" id="8fo-VS-scS">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="4jJ-kS-IxM">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="iBg-T1-pFL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsi-am-f6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.79999999999995" y="133.5832083958021"/>
+        </scene>
+        <!--Girls View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GirlsViewController" customModule="APresent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Present" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEV-uW-C1J">
+                                <rect key="frame" x="0.0" y="64" width="375" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoT-lb-tIt">
+                                <rect key="frame" x="190" y="297" width="166" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="christmastree"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3QT-LP-M5q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXf-Tt-GHR">
+                                <rect key="frame" x="190" y="458" width="166" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="snowman"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cob-L6-TYq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcn-Hk-oLy">
+                                <rect key="frame" x="21" y="458" width="166" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="mitten2"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHd-Ys-KXe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEU-N4-V9A">
+                                <rect key="frame" x="21" y="297" width="166" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="santaclaus"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KNF-CO-1Xq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowglobe" translatesAutoresizingMaskIntoConstraints="NO" id="CDc-V8-ujI">
+                                <rect key="frame" x="104" y="134" width="166" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="innisfree" translatesAutoresizingMaskIntoConstraints="NO" id="cxf-63-oAs">
+                                <rect key="frame" x="21" y="297" width="166" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kiehls" translatesAutoresizingMaskIntoConstraints="NO" id="b4I-4p-PEu">
+                                <rect key="frame" x="190" y="297" width="169" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="visee" translatesAutoresizingMaskIntoConstraints="NO" id="wvs-J0-f7v">
+                                <rect key="frame" x="21" y="458" width="166" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oneshot" translatesAutoresizingMaskIntoConstraints="NO" id="4v8-XG-WHd">
+                                <rect key="frame" x="190" y="458" width="166" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lion1" translatesAutoresizingMaskIntoConstraints="NO" id="ccj-AL-D7u">
+                                <rect key="frame" x="104" y="134" width="166" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rhs-5g-cC5"/>
+                    <connections>
+                        <outlet property="christmastreeButton" destination="YoT-lb-tIt" id="0XJ-5n-Ifn"/>
+                        <outlet property="innisfree" destination="cxf-63-oAs" id="GcI-Bl-2kr"/>
+                        <outlet property="kiehls" destination="b4I-4p-PEu" id="TZ8-oe-kUT"/>
+                        <outlet property="lion1Image" destination="ccj-AL-D7u" id="Cfo-dn-mvM"/>
+                        <outlet property="mitten2Button" destination="xcn-Hk-oLy" id="uOU-3B-9uR"/>
+                        <outlet property="oneshot" destination="4v8-XG-WHd" id="K6r-y9-EtW"/>
+                        <outlet property="santaclausButton" destination="CEU-N4-V9A" id="Gak-Pr-VTY"/>
+                        <outlet property="snowglobeImage" destination="CDc-V8-ujI" id="WVt-Mc-SDa"/>
+                        <outlet property="snowmanButton" destination="BXf-Tt-GHR" id="Sag-gd-Tec"/>
+                        <outlet property="visee" destination="wvs-J0-f7v" id="4ST-rx-2d5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1245.5999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--A Present for Childs-->
+        <scene sceneID="UCN-hC-Ilq">
+            <objects>
+                <viewController id="DOV-rL-vrT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dvp-iT-fVN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="b9K-fF-eg3">
+                                <rect key="frame" x="0.0" y="146" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1. 地球又發生了危機, 復仇者聯盟成員要出任務拯救地球, 選擇喜歡的復仇者聯盟成員,中間的蝙蝠俠會變身,如果跟你選的一樣代表猜中要出任務的成員囉 2. 你會收到一張任務卡,完成任務就可以得到禮物" translatesAutoresizingMaskIntoConstraints="NO" id="5ix-5P-Xih">
+                                <rect key="frame" x="74" y="170" width="249" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="交換心願規則：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ceh-JD-oxL">
+                                <rect key="frame" x="124" y="101" width="150" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="HlI-OE-rzL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="A Present for Childs" id="mcy-fh-eCY">
+                        <barButtonItem key="rightBarButtonItem" title="下一頁" id="MB7-0n-QzJ">
+                            <connections>
+                                <segue destination="Av8-gO-Twz" kind="show" id="D9w-H6-t5a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLS-NV-jnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.79999999999995" y="886.50674662668678"/>
+        </scene>
+        <!--A Present for Artists-->
+        <scene sceneID="8OF-QG-4p7">
+            <objects>
+                <viewController id="JVe-Wn-ztL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Zb-VC-lcb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lalaland3" translatesAutoresizingMaskIntoConstraints="NO" id="h93-Np-Zye">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tN7-Ki-6bc">
+                                <rect key="frame" x="41" y="254" width="268" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Here's to the ones who dream
+Foolish as they may seem
+Here's to the hearts that ache
+Here's to the mess we make</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="TEi-2g-GdH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="A Present for Artists" id="vYv-c8-dpg">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="6g1-0y-88e">
+                            <connections>
+                                <segue destination="Azm-Sc-fux" kind="show" id="xCm-4B-j0X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eV8-WF-Lfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.79999999999995" y="1618.7406296851575"/>
+        </scene>
+        <!--Artists View Controller-->
+        <scene sceneID="IZh-UG-duu">
+            <objects>
+                <viewController id="Azm-Sc-fux" customClass="ArtistsViewController" customModule="APresent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J7c-aG-xgr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Present" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORL-NJ-nPG">
+                                <rect key="frame" x="0.0" y="73" width="375" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVT-3a-UnI">
+                                <rect key="frame" x="16" y="301" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="fruittree"/>
+                                <connections>
+                                    <action selector="play:" destination="Azm-Sc-fux" eventType="touchUpInside" id="4IX-RF-lcw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXD-R8-cIA">
+                                <rect key="frame" x="80" y="301" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="pine"/>
+                                <connections>
+                                    <action selector="play:" destination="Azm-Sc-fux" eventType="touchUpInside" id="RhM-Uq-EiF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yD7-KQ-3Qx">
+                                <rect key="frame" x="223" y="299" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="wheat"/>
+                                <connections>
+                                    <action selector="play:" destination="Azm-Sc-fux" eventType="touchUpInside" id="Ccv-lb-rms"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rose" translatesAutoresizingMaskIntoConstraints="NO" id="JIr-JU-fd4">
+                                <rect key="frame" x="155" y="300" width="64" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QB-jf-bNg">
+                                <rect key="frame" x="295" y="301" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="leaf"/>
+                                <connections>
+                                    <action selector="play:" destination="Azm-Sc-fux" eventType="touchUpInside" id="M1D-oD-QYJ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1. 上傳你想交換的藝術作品 (玫瑰圖案) 2. 選擇其他的植物,如果玫瑰變成跟你選的植物一樣,就代表交換別人的人的作品成功囉 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oy3-Ui-NW4">
+                                <rect key="frame" x="40" y="480" width="311" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="CnM-Yd-duK"/>
+                    </view>
+                    <connections>
+                        <outlet property="fruittreeButton" destination="hVT-3a-UnI" id="Oyb-vA-bF7"/>
+                        <outlet property="leafButton" destination="1QB-jf-bNg" id="gvd-uV-lEG"/>
+                        <outlet property="pineButton" destination="mXD-R8-cIA" id="jdl-Jl-18N"/>
+                        <outlet property="roseImage" destination="JIr-JU-fd4" id="R5T-D0-vm1"/>
+                        <outlet property="wheatButton" destination="yD7-KQ-3Qx" id="JEe-bg-UtI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J23-mu-nQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247.2" y="1618.7406296851575"/>
+        </scene>
+        <!--Childs View Controller-->
+        <scene sceneID="62Z-Ov-Hp7">
+            <objects>
+                <viewController id="Av8-gO-Twz" customClass="ChildsViewController" customModule="APresent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CKn-0H-E5A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="space1" translatesAutoresizingMaskIntoConstraints="NO" id="fFH-nL-dAO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="569"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-3Y-qTl">
+                                <rect key="frame" x="200" y="430" width="202" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="captainamerica"/>
+                                <connections>
+                                    <action selector="play:" destination="Av8-gO-Twz" eventType="touchUpInside" id="59M-pd-tK5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Present" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wK8-D2-aEx">
+                                <rect key="frame" x="0.0" y="86" width="375" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpt-tR-KVY">
+                                <rect key="frame" x="-9" y="149" width="180" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ironman"/>
+                                <connections>
+                                    <action selector="play:" destination="Av8-gO-Twz" eventType="touchUpInside" id="OrW-li-scw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrT-HP-G4B">
+                                <rect key="frame" x="239" y="149" width="143" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="thor"/>
+                                <connections>
+                                    <action selector="play:" destination="Av8-gO-Twz" eventType="touchUpInside" id="CE0-T3-SNy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o52-qB-pm8">
+                                <rect key="frame" x="16" y="442" width="129" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hulk"/>
+                                <connections>
+                                    <action selector="play:" destination="Av8-gO-Twz" eventType="touchUpInside" id="Vd2-zm-Qow"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mission" translatesAutoresizingMaskIntoConstraints="NO" id="zlI-RT-UCr">
+                                <rect key="frame" x="131" y="154" width="116" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="batman" translatesAutoresizingMaskIntoConstraints="NO" id="NBN-iE-OrG">
+                                <rect key="frame" x="119" y="301" width="140" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="vcb-A7-ctj"/>
+                    </view>
+                    <connections>
+                        <outlet property="batmanImage" destination="NBN-iE-OrG" id="bhH-gn-XcZ"/>
+                        <outlet property="captainamericaButton" destination="7Tg-3Y-qTl" id="wef-hD-MIM"/>
+                        <outlet property="hulkButton" destination="o52-qB-pm8" id="6Qf-c5-4jn"/>
+                        <outlet property="ironmanButton" destination="lpt-tR-KVY" id="EjO-dK-SdF"/>
+                        <outlet property="missionImage" destination="zlI-RT-UCr" id="O35-cL-h7A"/>
+                        <outlet property="thorButton" destination="mrT-HP-G4B" id="rxk-1O-AJQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SO1-aK-R6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1245.5999999999999" y="886.50674662668678"/>
+        </scene>
+        <!--Girls-->
+        <scene sceneID="aUa-LF-2XB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1vU-ll-6Nw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Girls" image="highheels" id="vg3-ge-M3F"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HKy-pc-KSV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YPc-BD-5OE" kind="relationship" relationship="rootViewController" id="1hL-eA-FKe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wwh-6a-hX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80.799999999999997" y="133.5832083958021"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="opC-Ii-ALD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iDv-Xa-yKR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DwW-cd-Vsd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1vU-ll-6Nw" kind="relationship" relationship="viewControllers" id="DxY-S2-jZM"/>
+                        <segue destination="Qx6-a3-7tC" kind="relationship" relationship="viewControllers" id="hRq-TT-ond"/>
+                        <segue destination="m1g-bJ-jVs" kind="relationship" relationship="viewControllers" id="Ayi-s7-fFw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yR7-cK-H2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720" y="133.13343328335833"/>
+        </scene>
+        <!--Childs-->
+        <scene sceneID="VDq-xJ-4jC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qx6-a3-7tC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Childs" image="bear" id="ni1-Gh-1h9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="itH-yZ-23l">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DOV-rL-vrT" kind="relationship" relationship="rootViewController" id="frP-5t-QPM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ix-6v-47x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="887"/>
+        </scene>
+        <!--Artists-->
+        <scene sceneID="IZZ-BI-AB1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m1g-bJ-jVs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Artists" image="dove" id="zaN-7E-OFH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="naJ-ww-rvg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JVe-Wn-ztL" kind="relationship" relationship="rootViewController" id="qbP-Ml-eD9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPw-F5-Ilg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82" y="1619"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="batman" width="143" height="185"/>
+        <image name="bear" width="24" height="24"/>
+        <image name="captainamerica" width="128" height="146"/>
+        <image name="christmastree" width="64" height="64"/>
+        <image name="dove" width="24" height="24"/>
+        <image name="earth" width="1280" height="720"/>
+        <image name="fruittree" width="64" height="64"/>
+        <image name="gift" width="64" height="64"/>
+        <image name="highheels" width="24" height="24"/>
+        <image name="hulk" width="135" height="154"/>
+        <image name="innisfree" width="649" height="620"/>
+        <image name="ironman" width="139" height="159"/>
+        <image name="kiehls" width="960" height="960"/>
+        <image name="lalaland3" width="404" height="581"/>
+        <image name="leaf" width="64" height="64"/>
+        <image name="lion1" width="459" height="437"/>
+        <image name="mission" width="261" height="321"/>
+        <image name="mitten2" width="64" height="64"/>
+        <image name="oneshot" width="566" height="567"/>
+        <image name="pine" width="64" height="64"/>
+        <image name="rose" width="64" height="64"/>
+        <image name="santaclaus" width="64" height="64"/>
+        <image name="snowglobe" width="64" height="64"/>
+        <image name="snowman" width="64" height="64"/>
+        <image name="space1" width="1920" height="1080"/>
+        <image name="thor" width="141" height="179"/>
+        <image name="visee" width="590" height="442"/>
+        <image name="wheat" width="64" height="64"/>
+    </resources>
 </document>

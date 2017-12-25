@@ -14,6 +14,9 @@
 		1306ADBE1FE818310098DD08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1306ADBC1FE818310098DD08 /* LaunchScreen.storyboard */; };
 		1306ADC91FE818310098DD08 /* APresentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADC81FE818310098DD08 /* APresentTests.swift */; };
 		1306ADD41FE818310098DD08 /* APresentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADD31FE818310098DD08 /* APresentUITests.swift */; };
+		1306ADE21FE8185D0098DD08 /* GirlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306ADE11FE8185D0098DD08 /* GirlsViewController.swift */; };
+		13D9FDDD1FEFBF6D00D9D18D /* ChildsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D9FDDC1FEFBF6D00D9D18D /* ChildsViewController.swift */; };
+		13E4A9A41FF099310013E897 /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E4A9A31FF099310013E897 /* ArtistsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		1306ADCF1FE818310098DD08 /* APresentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APresentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1306ADD31FE818310098DD08 /* APresentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APresentUITests.swift; sourceTree = "<group>"; };
 		1306ADD51FE818320098DD08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1306ADE11FE8185D0098DD08 /* GirlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlsViewController.swift; sourceTree = "<group>"; };
+		13D9FDDC1FEFBF6D00D9D18D /* ChildsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildsViewController.swift; sourceTree = "<group>"; };
+		13E4A9A31FF099310013E897 /* ArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				1306ADB31FE818310098DD08 /* AppDelegate.swift */,
 				1306ADB51FE818310098DD08 /* ViewController.swift */,
 				1306ADB71FE818310098DD08 /* Main.storyboard */,
+				13E4A9A31FF099310013E897 /* ArtistsViewController.swift */,
+				13D9FDDC1FEFBF6D00D9D18D /* ChildsViewController.swift */,
+				1306ADE11FE8185D0098DD08 /* GirlsViewController.swift */,
 				1306ADBA1FE818310098DD08 /* Assets.xcassets */,
 				1306ADBC1FE818310098DD08 /* LaunchScreen.storyboard */,
 				1306ADBF1FE818310098DD08 /* Info.plist */,
@@ -261,6 +270,9 @@
 			files = (
 				1306ADB61FE818310098DD08 /* ViewController.swift in Sources */,
 				1306ADB41FE818310098DD08 /* AppDelegate.swift in Sources */,
+				1306ADE21FE8185D0098DD08 /* GirlsViewController.swift in Sources */,
+				13E4A9A41FF099310013E897 /* ArtistsViewController.swift in Sources */,
+				13D9FDDD1FEFBF6D00D9D18D /* ChildsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
